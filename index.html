@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Inkora — Stories, ideas and perspectives."
+    >
+
+    <title>Inkora — Stories. Ideas. Perspectives.</title>
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+
+    <!-- Main JavaScript -->
+    <script
+        src="./js/main.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="header">
+
+        <div class="container header-container">
+
+            <!-- Logo -->
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Inkora
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav
+                class="navbar"
+                id="navbar"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="#home"
+                    class="navbar-link"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="#featured"
+                    class="navbar-link"
+                >
+                    Featured
+                </a>
+
+                <a
+                    href="#latest"
+                    class="navbar-link"
+                >
+                    Latest
+                </a>
+
+                <a
+                    href="#categories"
+                    class="navbar-link"
+                >
+                    Categories
+                </a>
+
+                <a
+                    href="#about"
+                    class="navbar-link"
+                >
+                    About
+                </a>
+
+            </nav>
+
+
+            <!-- Header actions -->
+
+            <div class="header-actions">
+
+                <button
+                    class="icon-btn"
+                    id="searchBtn"
+                    type="button"
+                    aria-label="Open search"
+                >
+                    🔍
+                </button>
+
+
+                <button
+                    class="icon-btn"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Toggle dark mode"
+                >
+                    🌙
+                </button>
+
+
+                <button
+                    class="menu-btn"
+                    id="menuBtn"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         SEARCH OVERLAY
+    ========================================== -->
+
+    <div
+        class="search-overlay"
+        id="searchOverlay"
+    >
+
+        <div class="search-container">
+
+            <button
+                class="close-search"
+                id="closeSearch"
+                type="button"
+                aria-label="Close search"
+            >
+                ✕
+            </button>
+
+
+            <h2>
+                Search Inkora
+            </h2>
+
+
+            <form
+                class="search-form"
+                id="searchForm"
+            >
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search articles..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Search
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main id="home">
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="hero">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        Welcome to Inkora
+                    </p>
+
+                    <h1 class="hero-title">
+
+                        Stories that
+                        <span>make you think.</span>
+
+                    </h1>
+
+                    <p class="hero-description">
+
+                        Discover thoughtful stories,
+                        practical ideas and fresh
+                        perspectives from writers
+                        who have something worth saying.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#latest"
+                            class="btn"
+                        >
+                            Explore Articles
+                        </a>
+
+                        <a
+                            href="#featured"
+                            class="text-link"
+                        >
+                            Featured Stories →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FEATURED POSTS
+        ====================================== -->
+
+        <section
+            class="section featured"
+            id="featured"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Featured
+                        </p>
+
+                        <h2 class="section-title">
+                            Stories worth reading
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="#latest"
+                        class="text-link"
+                    >
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="featured-grid"
+                    id="featuredPosts"
+                >
+
+                    <!-- JavaScript will generate
+                         featured posts here -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             LATEST POSTS
+        ====================================== -->
+
+        <section
+            class="section latest"
+            id="latest"
+        >
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Latest
+                        </p>
+
+                        <h2 class="section-title">
+                            From the journal
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Categories -->
+
+                <div
+                    class="category-list"
+                    id="categories"
+                >
+
+                    <button
+                        class="category-btn active"
+                        data-category="all"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="category-btn"
+                        data-category="Technology"
+                    >
+                        Technology
+                    </button>
+
+                    <button
+                        class="category-btn"
+                        data-category="Design"
+                    >
+                        Design
+                    </button>
+
+                    <button
+                        class="category-btn"
+                        data-category="Lifestyle"
+                    >
+                        Lifestyle
+                    </button>
+
+                    <button
+                        class="category-btn"
+                        data-category="Business"
+                    >
+                        Business
+                    </button>
+
+                </div>
+
+
+                <!-- Posts -->
+
+                <div
+                    class="post-grid"
+                    id="latestPosts"
+                >
+
+                    <!-- JavaScript will generate
+                         latest posts here -->
+
+                </div>
+
+
+                <!-- Load More -->
+
+                <div class="load-more-wrapper">
+
+                    <button
+                        class="btn btn-outline"
+                        id="loadMoreBtn"
+                        type="button"
+                    >
+                        Load More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             NEWSLETTER
+        ====================================== -->
+
+        <section class="newsletter-section">
+
+            <div class="container newsletter-container">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Stay in the loop
+                    </p>
+
+                    <h2 class="section-title">
+                        Ideas worth your inbox.
+                    </h2>
+
+                    <p>
+                        Get our latest stories and
+                        insights delivered directly
+                        to your inbox.
+                    </p>
+
+                </div>
+
+
+                <form
+                    class="newsletter-form"
+                    id="newsletterForm"
+                >
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Your email address"
+                        required
+                    >
+
+                    <button
+                        class="btn"
+                        type="submit"
+                    >
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer
+        class="footer"
+        id="about"
+    >
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+                        Inkora
+                    </a>
+
+                    <p>
+                        Stories. Ideas. Perspectives.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Explore
+                    </h3>
+
+                    <a href="#featured">
+                        Featured
+                    </a>
+
+                    <a href="#latest">
+                        Latest
+                    </a>
+
+                    <a href="#categories">
+                        Categories
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Categories
+                    </h3>
+
+                    <a href="#">
+                        Technology
+                    </a>
+
+                    <a href="#">
+                        Design
+                    </a>
+
+                    <a href="#">
+                        Lifestyle
+                    </a>
+
+                    <a href="#">
+                        Business
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Follow
+                    </h3>
+
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        Twitter
+                    </a>
+
+                    <a href="#">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Inkora. All rights reserved.
+                </p>
+
+                <p>
+                    Built with HTML, CSS & JavaScript.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
