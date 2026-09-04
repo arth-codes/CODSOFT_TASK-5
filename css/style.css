@@ -6,7 +6,7 @@
 
 :root {
 
-    /* Colors */
+    
 
     --color-background: #f8f7f4;
     --color-surface: #ffffff;
@@ -17,19 +17,19 @@
     --color-accent-dark: #91452a;
 
 
-    /* Typography */
+    
 
     --font-body: "DM Sans", sans-serif;
     --font-heading: "Playfair Display", serif;
 
 
-    /* Layout */
+    
 
     --container-width: 1200px;
     --container-padding: 20px;
 
 
-    /* Borders */
+    
 
     --radius-small: 8px;
     --radius-medium: 16px;
@@ -37,7 +37,7 @@
     --radius-pill: 999px;
 
 
-    /* Shadows */
+    
 
     --shadow-small:
         0 4px 20px rgba(0, 0, 0, 0.06);
@@ -46,10 +46,23 @@
         0 10px 40px rgba(0, 0, 0, 0.08);
 
 
-    /* Animation */
+    
 
     --transition:
         0.25s ease;
+
+}
+
+
+html.dark-mode {
+
+    --color-background: #171717;
+    --color-surface: #222222;
+    --color-text: #f5f5f5;
+    --color-text-light: #b5b5b5;
+    --color-border: #3a3a3a;
+    --color-accent: #d87850;
+    --color-accent-dark: #b85c38;
 
 }
 
@@ -57,6 +70,7 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
 
 body {
     min-height: 100vh;
@@ -95,9 +109,7 @@ button {
 ul {
     list-style: none;
 }
-/* =========================================
-   CONTAINER
-========================================= */
+
 
 .container {
     width: min(
@@ -107,9 +119,7 @@ ul {
 
     margin-inline: auto;
 }
-/* =========================================
-   BUTTONS
-========================================= */
+
 
 .btn {
     display: inline-flex;
@@ -151,9 +161,7 @@ ul {
     background-color: var(--color-text);
 }
 
-/* =========================================
-   HEADER
-========================================= */
+
 
 .header {
     position: relative;
@@ -233,9 +241,7 @@ ul {
 .menu-btn {
     display: none;
 }
-/* =========================================
-   HERO
-========================================= */
+
 
 .hero {
     padding-block: 100px 120px;
@@ -314,9 +320,7 @@ ul {
 .text-link:hover {
     color: var(--color-accent);
 }
-/* =========================================
-   SECTIONS
-========================================= */
+
 
 .section {
     padding-block: 90px;
@@ -345,9 +349,7 @@ ul {
 
     letter-spacing: -0.03em;
 }
-/* =========================================
-   FEATURED POSTS
-========================================= */
+
 
 .featured {
     background-color: var(--color-surface);
@@ -361,9 +363,7 @@ ul {
 
     gap: 24px;
 }
-/* =========================================
-   POST CARD
-========================================= */
+
 
 .post-card {
     overflow: hidden;
@@ -462,9 +462,7 @@ ul {
 
     font-size: 1.2rem;
 }
-/* =========================================
-   LATEST POSTS
-========================================= */
+
 
 .latest {
     background-color: var(--color-background);
@@ -478,9 +476,7 @@ ul {
 
     gap: 55px 24px;
 }
-/* =========================================
-   CATEGORIES
-========================================= */
+
 
 .category-list {
     display: flex;
@@ -517,9 +513,7 @@ ul {
 
     border-color: var(--color-text);
 }
-/* =========================================
-   LOAD MORE
-========================================= */
+
 
 .load-more-wrapper {
     display: flex;
@@ -527,9 +521,7 @@ ul {
 
     margin-top: 60px;
 }
-/* =========================================
-   NEWSLETTER
-========================================= */
+
 
 .newsletter-section {
     padding-block: 90px;
@@ -602,9 +594,7 @@ ul {
 .newsletter-section .btn:hover {
     background-color: var(--color-accent-dark);
 }
-/* =========================================
-   FOOTER
-========================================= */
+
 
 .footer {
     padding-block: 70px 25px;
@@ -665,9 +655,7 @@ ul {
 
     font-size: 1.3rem;
 }
-/* =========================================
-   SEARCH OVERLAY
-========================================= */
+
 
 .search-overlay {
     position: fixed;
@@ -754,9 +742,7 @@ ul {
 
     font-size: 1.7rem;
 }
-/* =========================================
-   TABLET
-========================================= */
+
 
 @media (max-width: 991px) {
 
@@ -782,9 +768,7 @@ ul {
     }
 
 }
-/* =========================================
-   MOBILE
-========================================= */
+
 
 @media (max-width: 767px) {
 
@@ -897,9 +881,7 @@ ul {
     }
 
 }
-/* ================================
-   ARTICLE PAGE
-================================ */
+
 
 .article {
     padding-block: 90px;
@@ -984,4 +966,58 @@ ul {
 .article-not-found p {
     margin: 15px 0 30px;
     color: var(--color-text-light);
+}
+
+
+
+
+.search-results {
+    margin-top: 30px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.search-result {
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.search-result:first-child {
+    border-top: none;
+}
+
+.search-result .post-meta {
+    color: #a0a0a0;
+}
+
+.search-result .post-meta span:first-child {
+    color: var(--color-accent);
+}
+
+.search-result-title {
+    margin-top: 8px;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+}
+
+.search-result-title a {
+    color: #ffffff;
+    transition: color var(--transition);
+}
+
+.search-result-title a:hover {
+    color: var(--color-accent);
+}
+
+.search-result-excerpt {
+    margin-top: 8px;
+    color: #b5b5b5;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.search-no-results {
+    padding: 30px 0;
+    color: #b5b5b5;
+    text-align: center;
 }
